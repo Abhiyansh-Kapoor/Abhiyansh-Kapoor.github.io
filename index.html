@@ -3,135 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhiyansh Kapoor - Personal Profile</title>
+    <title>Abhiyansh Kapoor | Personal Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Abhiyansh Kapoor</h1>
-        <p>Computer and Communication Engineering Student</p>
+    <header class="top-header">
+        <div class="container navbar">
+            <a href="#home" class="logo">Abhiyansh</a>
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#interests">Interests</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
-        <section class="intro" id="about">
-            <img src="images/profile.jpg" alt="Photograph of Abhiyansh Kapoor">
+    <main>
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="hello">Hello, I am</p>
+                    <h1>Abhiyansh Kapoor</h1>
+                    <h2>Computer and Communication Engineering Student</h2>
+                    <p>
+                        I am interested in web development, backend systems and
+                        artificial intelligence. I enjoy learning new technologies
+                        and using them in practical projects.
+                    </p>
 
-            <div>
-                <h2>About Me</h2>
+                    <div class="buttons">
+                        <a href="#projects" class="main-button">View My Projects</a>
+                        <a href="#contact" class="outline-button">Contact Me</a>
+                    </div>
+                </div>
+
+                <img class="profile-photo" src="images/profile.jpg" alt="Photograph of Abhiyansh Kapoor">
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container about-section">
+                <h2 class="section-title">About Me</h2>
                 <p>
-                    Hi! I am Abhiyansh Kapoor, a third-year B.Tech student at
-                    Manipal Institute of Technology. I am interested in web
-                    development, backend systems and artificial intelligence.
-                    I like working on projects that help me understand how the
-                    concepts I study can be used in real applications.
+                    I am a third-year B.Tech student at Manipal Institute of Technology.
+                    I like understanding how an idea can be converted into a working
+                    application. Through college projects and my internship, I have
+                    gained experience in web development, databases, backend APIs and
+                    machine learning. I am always looking for opportunities to improve
+                    my skills and work on interesting problems.
                 </p>
             </div>
         </section>
 
-        <section id="education">
-            <h2>Education and Experience</h2>
+        <section class="light-section" id="education">
+            <div class="container">
+                <h2 class="section-title">Education &amp; Experience</h2>
 
-            <div class="box">
-                <h3>Manipal Institute of Technology</h3>
-                <p>B.Tech in Computer and Communication Engineering</p>
-                <p>2024 - 2028 | CGPA: 8.26 / 10</p>
+                <div class="education-grid">
+                    <div class="info-card">
+                        <p class="date">2024 - 2028</p>
+                        <h3>Manipal Institute of Technology</h3>
+                        <p>B.Tech in Computer and Communication Engineering</p>
+                        <p><strong>CGPA:</strong> 8.26 / 10</p>
+                    </div>
+
+                    <div class="info-card">
+                        <p class="date">June - July 2026</p>
+                        <h3>Impressico Business Solutions</h3>
+                        <p>Backend Development Intern</p>
+                        <p>
+                            Worked with Django, Django REST Framework, PostgreSQL
+                            and Docker while contributing to backend development.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <p class="date">2024</p>
+                        <h3>Delhi Public School, Indirapuram</h3>
+                        <p>Completed Class XII with 92.4%.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="box">
-                <h3>Delhi Public School, Indirapuram</h3>
-                <p>Class XII - 92.4%</p>
-                <p>Completed in 2024</p>
-            </div>
-
-            <div class="box">
-                <h3>Backend Development Intern</h3>
-                <p>Impressico Business Solutions, Noida</p>
-                <p>
-                    During my internship, I worked with Django, Django REST
-                    Framework, PostgreSQL and Docker.
-                </p>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul class="skill-list">
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>C</li>
-                <li>Java</li>
-                <li>Django</li>
-                <li>React</li>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>Docker</li>
-                <li>Git</li>
-                <li>Machine Learning</li>
-            </ul>
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
 
-            <div class="project">
-                <h3>NutriAI</h3>
-                <p>
-                    A nutrition and fitness website that can scan food images
-                    and provide calorie and nutrition information.
-                </p>
-                <small>Django, React, PostgreSQL and Gemini Vision API</small>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>NutriAI</h3>
+                        <p>
+                            A nutrition and fitness platform that uses AI to scan
+                            food photographs and provide calorie and nutrition details.
+                        </p>
+                        <p class="tools">Django, React, PostgreSQL, Gemini Vision API</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>AQI Forecasting</h3>
+                        <p>
+                            A machine learning project comparing different models
+                            using five years of Delhi air-quality data.
+                        </p>
+                        <p class="tools">Python, XGBoost, LSTM, SHAP</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Patient Lifecycle System</h3>
+                        <p>
+                            A healthcare system for patient registration,
+                            consultations, diagnosis and prescription management.
+                        </p>
+                        <p class="tools">Python, Streamlit, MySQL</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="project">
-                <h3>Short-Term AQI Forecasting</h3>
-                <p>
-                    A machine learning project that compares different models
-                    using five years of Delhi air-quality data.
-                </p>
-                <small>Python, XGBoost, LSTM and SHAP</small>
-            </div>
+        <section class="light-section" id="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
 
-            <div class="project">
-                <h3>Patient Lifecycle System</h3>
-                <p>
-                    A healthcare management system for patient registration,
-                    consultations, diagnosis and prescriptions.
-                </p>
-                <small>Python, Streamlit and MySQL</small>
+                <div class="skill-list">
+                    <span>Python</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                    <span>C</span>
+                    <span>Java</span>
+                    <span>Django</span>
+                    <span>React</span>
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>Docker</span>
+                    <span>Git</span>
+                    <span>Machine Learning</span>
+                </div>
             </div>
         </section>
 
         <section id="interests">
-            <h2>Interests and Hobbies</h2>
-            <ul class="hobby-list">
-                <li>Swimming</li>
-                <li>Reading books</li>
-                <li>Going to the gym</li>
-            </ul>
+            <div class="container">
+                <h2 class="section-title">Interests &amp; Hobbies</h2>
+
+                <div class="interest-grid">
+                    <div class="interest-card">
+                        <h3>Swimming</h3>
+                        <p>I enjoy swimming as a way to stay active and refreshed.</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Reading</h3>
+                        <p>I like reading books and learning about different ideas.</p>
+                    </div>
+
+                    <div class="interest-card">
+                        <h3>Gym</h3>
+                        <p>Working out helps me remain disciplined and energetic.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:kapoor.abhiyansh@gmail.com">kapoor.abhiyansh@gmail.com</a></p>
-            <p>Phone: <a href="tel:+917678679455">+91 76786 79455</a></p>
-            <p><a href="https://www.linkedin.com/in/abhiyansh-kapoor/" target="_blank">LinkedIn</a></p>
-            <p><a href="https://github.com/Abhiyansh-Kapoor" target="_blank">GitHub</a></p>
+        <section class="contact-section" id="contact">
+            <div class="container contact-content">
+                <div>
+                    <h2>Contact Me</h2>
+                    <p>Feel free to contact me or connect with me online.</p>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:kapoor.abhiyansh@gmail.com">kapoor.abhiyansh@gmail.com</a>
+                    <a href="tel:+917678679455">+91 76786 79455</a>
+                    <a href="https://www.linkedin.com/in/abhiyansh-kapoor/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://github.com/Abhiyansh-Kapoor" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Abhiyansh Kapoor</p>
+        <p>&copy; 2026 Abhiyansh Kapoor | Made using HTML and CSS</p>
     </footer>
 
 </body>
